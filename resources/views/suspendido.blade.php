@@ -1,0 +1,1 @@
+El usuario no tiene acceso al sistema, esta suspendido!
