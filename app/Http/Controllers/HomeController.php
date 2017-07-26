@@ -35,7 +35,7 @@ class HomeController extends Controller
         else {
               return response()->json([
                   'exists' => 'true',
-                  'tour' => 'true',
+                  'tour' => $usuario->estado,
                   'name' => $usuario->nombres,
                   'id' => $usuario->id
               ]);
@@ -48,7 +48,7 @@ class HomeController extends Controller
       $cedula = $request->input('cedula');
 
       $usuario = User::find($cedula);
-      $usuario->estado='1';
+      $usuario->estado='0';
       $usuario->save();
 
       return response()->json([
