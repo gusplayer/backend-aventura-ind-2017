@@ -24,7 +24,7 @@ Route::post('api/guardar_pregunta', array('uses' => 'HomeController@guardarPregu
 
 
 //guardar el resultado final del test
-Route::get('api/resultado_test', array('uses' => 'HomeController@resultadoTest'));
+Route::post('api/resultado_test', array('uses' => 'HomeController@resultadoTest'));
 
 
 
